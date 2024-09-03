@@ -1,16 +1,98 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <style>
+        body {
+            background-color: #f8f8f8;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
 
+        .book-library {
+            background-color: #ffffff;
+            padding: 20px;
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .book {
+            display: flex;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eeeeee;
+            padding-bottom: 10px;
+        }
+
+        .book img {
+            width: 100px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        .book-details {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .book-title {
+            font-size: 18px;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+
+        .book-author {
+            color: #777777;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+
+        .book-price {
+            color: #2ecc71;
+            font-weight: bold;
+            margin: 0;
+        }
+    </style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <div class="book-library">
+        <!-- Book 1 -->
+        <div class="book">
+            <img src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Spy-in-the-Amber-by-Manohar-Malgonkar.jpg" alt="Spy in the Amber">
+            <div class="book-details">
+                <h2 class="book-title">Spy in the Amber</h2>
+                <p class="book-author">Author: Amitav Ghosh</p>
+                <p class="book-price">$10.99</p>
+            </div>
+        </div>
+
+        <!-- Book 2 -->
+        <div class="book">
+            <img src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Sacred-Games-by-Vikram-Chandra.jpg" alt="Sacred Games">
+            <div class="book-details">
+                <h2 class="book-title">Sacred Games</h2>
+                <p class="book-author">Author: Vikram Chandra</p>
+                <p class="book-price">$12.99</p>
+            </div>
+        </div>
+
+        <!-- Book 3 -->
+        <div class="book">
+            <img src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Byomkesh-Bakshi-by-Sharadindu-Bandyopadhyay.jpg" alt="Byomkesh Bakshi">
+            <div class="book-details">
+                <h2 class="book-title">Byomkesh Bakshi</h2>
+                <p class="book-author">Author: Sharadindu Bandyopadhyay</p>
+                <p class="book-price">$8.99</p>
+            </div>
+        </div>
+    </div>
 
 </body>
-
 </html>
